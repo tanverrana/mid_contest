@@ -3,7 +3,7 @@ int main()
 {
     int a, b, i, j;
     scanf("%d%d", &a, &b);
-    int matrix[a][b];
+    int matrix[100][100];
     for (i = 1; i <= a; i++)
     {
         for (j = 1; j <= b; j++)
