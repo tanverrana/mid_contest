@@ -6,7 +6,7 @@ int main()
     int num[n];
     for (i = 1; i <= n; i++)
     {
-        scanf("%d", num[i]);
+        scanf("%d", &num[i]);
         if (num[i] % 2 == 0)
         {
             max = num[i];
