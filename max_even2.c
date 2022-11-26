@@ -22,34 +22,21 @@ int main()
                     max = sum;
                 }
             }
-            if (num[i] == num[j])
+        }
+        if (num[n - 1] % 2 == 0)
+        {
+            if (max < num[n - 1])
             {
-                sum = 0;
-                sum = num[i] + num[j];
-                if (sum % 2 == 0)
-                {
-                    if (sum > max)
-                    {
-                        max = sum;
-                    }
-                }
+                max = num[n - 1];
             }
         }
-    }
-    if (num[n - 1] % 2 == 0)
-    {
-        if (max < num[n - 1])
+        if (num[0] % 2 == 0)
         {
-            max = num[n - 1];
+            if (max < num[0])
+            {
+                max = num[0];
+            }
         }
+        printf("%d\n", max);
+        return 0;
     }
-    if (num[0] % 2 == 0)
-    {
-        if (max < num[0])
-        {
-            max = num[0];
-        }
-    }
-    printf("%d\n", max);
-    return 0;
-}
